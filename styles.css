@@ -1,1 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 3rem;
+}
+
+.moviesearchSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.moviesearchSection > *{
+    margin: 1rem 0;
+}
+.moviesearchSection form input{
+    height: 30px;
+    border-radius: 5px;
+    border-color: #333;
+    
+}
+.moviesearchSection form button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border-color: #333;
+    cursor: pointer;
+}
+.moviesearchSection div button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border-color: #333;
+    cursor: pointer;
+}
+.movieDisplaySection .movieCustmizationbuttons{
+    padding: 3px 5px 10px 20px;
+}
+.movieCustmizationbuttons button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border-color: #333;
+    cursor: pointer;
+}
+.movieListing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px ;
+}
+.movieListing .movie-card-body{
+    border: 1px solid #333;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.movie-card-body .movie-image{
+    height: 300px;
+    width: 250px;
+}
+.movie-card-body .movie-image img{
+    height: inherit;
+    width: inherit;
+}
+.movie-card-body .movie-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movie-card-body .movie-title .movie-title-div{
+    width: 200px;
+    text-align: center;
+    margin-top: 15px ;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    height: 80px;
+}
+.movie-card-body .movie-vote-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 5px 10px;
+    max-width: 200px;
+    height: 70px;
+}
+.movie-card-body .movie-fev-icon{
+    margin: 10px 0 0 0;
+    padding: 15px 5px 5px 15px;
+}
+.footer-next-prev-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 1rem;
+}
+.previous-btn,.current-btn,
+.next-btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border-color: #333;
+    cursor: pointer;
+}
+@media only screen and (max-width : 570px){
+    .movie-card-body .movie-image{
+        height: 250px;
+        width: 200px;
+    }
+    .movie-card-body .movie-title .movie-title-div{
+        width: 200px;
+        text-align: center;
+        margin-top: 15px ;
+        margin-bottom: 15px;
+        font-size: 20px;
+    
+    }
+}
+@media only screen and (max-width : 500px){
+    .movie-card-body .movie-image{
+        height: 200px;
+        width: 150px;
+    }
+    .movie-card-body .movie-title .movie-title-div{
+        width: 100px;
+        text-align: center;
+        margin-top: 15px ;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .moviesearchSection div button{
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        border-color: #333;
+        cursor: pointer;
+        max-width: 100px;
+    }
+    .movie-card-body .movie-vote-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0 5px 10px;
+        max-width: 150px;
+        font-size: 13px;
+    }
+}
+/* @media only screen and (max-width : 375px){
+    .movie-card-body .movie-image{
+        height: 200px;
+        width: 150px;
+    }
+    .movie-card-body .movie-title .movie-title-div{
+        width: 100px;
+        text-align: center;
+        margin-top: 15px ;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    
+} */
